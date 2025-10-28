@@ -78,7 +78,21 @@ It indicates potential {context['tactic'].lower()} behavior within the WSL envir
 
 # Step 5: Main execution block
 if __name__ == "__main__":
-    print("=== NexusGuard LLM Component ===")
-    print(json.dumps(sample_input, indent=4))
-    print("\n--- LLM Reasoning Output ---\n")
-    print(llm_reasoning(sample_input))
+    print("=== NexusGuard LLM Component ===\n")
+
+    test_events = [
+        sample_input,
+        {
+            "timestamp": str(datetime.utcnow()),
+            "sensor_id": "WSL-125",
+            "command": "ls -al /home/user",
+            "risk_score": 12,
+            "ml_label": "Benign Command"
+        }
+    ]
+
+    for event in test_events:
+        print(json.dumps(event, indent=4))
+        print("\n--- LLM Reasoning Output ---\n")
+        print(llm_reasoning(event))
+        print("\n" + "="*60 + "\n")
