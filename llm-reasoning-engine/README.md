@@ -13,3 +13,12 @@ It interprets anomaly detections from the ML model, maps them to MITRE ATT&CK te
 ### Example Run
 ```bash
 python3 llm_component.py
+
+Project structure (LLM component)
+llm-reasoning-engine/
+├── app.py
+├── context_retriever.py
+├── llm_component.py
+├── tests/
+│   └── test_api.py
+└── sample_output.txt
