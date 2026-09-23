@@ -16,12 +16,12 @@ except ImportError:
 LOG_FILE = r"C:\ProgramData\NexusGuard\command_stream.log"
 CONFIG_FILE = r"C:\ProgramData\NexusGuard\agent_config.json"
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1445332786419597443/kk6XcxOu1Lsx6TaXuNBe2N5kqGp2W-c-YgkpuXz14HUV99IbxchzOWK52aCMvYqOiZvt"
+WEBHOOK_URL = "https://discord.com/api/webhooks/144533278641959vt"
 
 MAX_BATCH_SIZE = 10
 MAX_BATCH_INTERVAL = 10.0
 
-AWS_ENDPOINT = "https://60oyks9dz0.execute-api.ap-south-1.amazonaws.com/prod/ingest"
+AWS_ENDPOINT = "https://execute-api.ap-south-1.amazonaws.com/prod/ingest"
 AWS_REGION = "ap-south-1"
 AWS_SERVICE = "execute-api"
 
